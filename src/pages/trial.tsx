@@ -1,30 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import {
-  Heart,
-  Shield,
-  Phone,
-  Zap,
-  Wheat,
-  Car,
-  Cpu,
-  Plane,
-  Leaf,
-  Shirt,
-  Boxes,
-  Factory,
-  ChevronRight,
-  ShoppingCart
-} from 'lucide-react';
 import { supabase } from '../lib/supabase';
 import { Product } from '../types/supabase';
 import { useCart } from '../context/CartContext';
 import { toast } from 'react-hot-toast';
+import { ChevronRight, ShoppingCart } from 'lucide-react';
 
+// Define verticals with custom image URLs for icons
 const verticals = [
   {
     title: "Health Care",
-    icon: Heart,
+    icon: 'https://example.com/health-care-icon.png', // Replace with your custom image URL
     description: "Advanced medical solutions and healthcare equipment designed to meet modern healthcare challenges with reliability and performance.",
     image: "https://images.unsplash.com/photo-1516549655169-df83a0774514",
     key: "Health Care",
@@ -32,7 +18,7 @@ const verticals = [
   },
   {
     title: "Defense",
-    icon: Shield,
+    icon: 'https://example.com/defense-icon.png', // Replace with your custom image URL
     description: "Cutting-edge defense systems and security solutions for modern defense requirements.",
     image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e",
     key: "Defense",
@@ -40,7 +26,7 @@ const verticals = [
   },
   {
     title: "Telecom",
-    icon: Phone,
+    icon: 'https://example.com/telecom-icon.png', // Replace with your custom image URL
     description: "Advanced telecommunications infrastructure and solutions for next-generation connectivity.",
     image: "https://images.unsplash.com/photo-1516387938699-a93567ec168e",
     key: "Telecom",
@@ -48,7 +34,7 @@ const verticals = [
   },
   {
     title: "Future Energy",
-    icon: Zap,
+    icon: 'https://example.com/future-energy-icon.png', // Replace with your custom image URL
     description: "Innovative energy solutions for a sustainable future, from renewable sources to smart grid technologies.",
     image: "https://images.unsplash.com/photo-1509391366360-2e959784a276",
     key: "Future Energy",
@@ -56,15 +42,15 @@ const verticals = [
   },
   {
     title: "Agri Food",
-    icon: Wheat,
+    icon: 'https://example.com/agri-food-icon.png', // Replace with your custom image URL
     description: "Advanced agricultural and food processing solutions for sustainable food production.",
-    image: "https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//background_liv-lif.jpg",
+    image: "https://images.unsplash.com/photo-1591261730799-ee4e6c2d16d7",
     key: "Agri Food",
     subCategories: ["Farm Technology", "Food Processing", "Smart Agriculture", "Sustainable Solutions"]
   },
   {
     title: "Mobility",
-    icon: Car,
+    icon: 'https://example.com/mobility-icon.png', // Replace with your custom image URL
     description: "Next-generation mobility solutions for efficient and sustainable transportation.",
     image: "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0",
     key: "Mobility",
@@ -72,7 +58,7 @@ const verticals = [
   },
   {
     title: "Electronics",
-    icon: Cpu,
+    icon: 'https://example.com/electronics-icon.png', // Replace with your custom image URL
     description: "Cutting-edge electronic solutions and components for various industrial applications.",
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
     key: "Electronics",
@@ -80,7 +66,7 @@ const verticals = [
   },
   {
     title: "Aerospace",
-    icon: Plane,
+    icon: 'https://example.com/aerospace-icon.png', // Replace with your custom image URL
     description: "Advanced aerospace technologies and solutions for aviation and space exploration.",
     image: "https://images.unsplash.com/photo-1517976487492-5750f3195933",
     key: "Aerospace",
@@ -88,7 +74,7 @@ const verticals = [
   },
   {
     title: "Sustainability",
-    icon: Leaf,
+    icon: 'https://example.com/sustainability-icon.png', // Replace with your custom image URL
     description: "Eco-friendly solutions and technologies for a sustainable future.",
     image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e",
     key: "Sustainability",
@@ -96,7 +82,7 @@ const verticals = [
   },
   {
     title: "Fashion",
-    icon: Shirt,
+    icon: 'https://example.com/fashion-icon.png', // Replace with your custom image URL
     description: "Innovative fashion technology and textile solutions for the modern industry.",
     image: "https://images.unsplash.com/photo-1618090584126-129cd1b2d239",
     key: "Fashion",
@@ -104,7 +90,7 @@ const verticals = [
   },
   {
     title: "Multitech",
-    icon: Boxes,
+    icon: 'https://example.com/multitech-icon.png', // Replace with your custom image URL
     description: "Integrated multi-technology solutions for diverse industrial applications.",
     image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789",
     key: "Multitech",
@@ -112,7 +98,7 @@ const verticals = [
   },
   {
     title: "Manufacturing",
-    icon: Factory,
+    icon: 'https://example.com/manufacturing-icon.png', // Replace with your custom image URL
     description: "Advanced manufacturing solutions and smart factory technologies.",
     image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122",
     key: "Manufacturing",
@@ -164,43 +150,26 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-        <section className="relative w-full h-[90vh] bg-gray-900 text-white">
-          {/* Background Image */}
-          <div className="absolute inset-0 overflow-hidden">
-            <img
-              src="https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//rsz_1webbanner%20(1).jpg"
-              alt="Industrial Background"
-              className="w-full h-full object-cover"
-            />
-          </div>
+      <section className="relative w-full h-[90vh] bg-gray-900 text-white">
+        {/* Background Image */}
+        <div className="absolute inset-0 overflow-hidden">
+          <img
+            src="https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//rsz_1webbanner%20(1).jpg"
+            alt="Industrial Background"
+            className="w-full h-full object-cover"
+          />
+        </div>
 
-          {/* Centered Fixed-Width Button */}
-          {/* <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 sm:pt-48 lg:pt-56 flex justify-center">
-            <Link
-              to="/verticals"
-              className="bg-cyan-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-cyan-700 transition-colors shadow-lg"
-            >
-              Explore All Verticals
-            </Link>
-          </div> */}
-
-          {/* Full-Width Bottom Button */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-            <button
-              onClick={() => window.location.href = "/verticals"}
-              className="bg-cyan-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-cyan-700 transition-colors shadow-lg"
-            >
-              Explore All Verticals
-            </button>
-          </div>
-
-
-        </section>
-
-
-
-
-
+        {/* Full-Width Bottom Button */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+          <button
+            onClick={() => window.location.href = "/verticals"}
+            className="bg-cyan-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-cyan-700 transition-colors shadow-lg"
+          >
+            Explore All Verticals
+          </button>
+        </div>
+      </section>
 
       {/* Verticals Section */}
       <section className="py-16 bg-gray-50">
@@ -209,7 +178,7 @@ export default function Home() {
           
           <div className="space-y-8">
             {verticals.map((vertical) => {
-              const Icon = vertical.icon;
+              const iconUrl = vertical.icon; // Custom image URL
               const products = verticalProducts[vertical.key] || [];
               
               return (
@@ -227,7 +196,11 @@ export default function Home() {
                         <div>
                           <div className="flex items-center gap-3 mb-4">
                             <div className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center">
-                              <Icon className="w-6 h-6 text-white" />
+                              <img
+                                src={iconUrl}
+                                alt={`${vertical.title} Icon`}
+                                className="w-6 h-6"
+                              />
                             </div>
                             <h3 className="text-2xl font-bold text-white">
                               {vertical.title}
