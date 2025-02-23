@@ -350,12 +350,36 @@ const verticals = [
     subCategories: ["Medical Equipment", "Diagnostic Devices", "Healthcare Solutions", "Patient Care"]
   },
   {
+    title: "Agri Food",
+    icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//food%20and%20agri.png', // Replace with your custom image URL
+    description: "Advanced agricultural and food processing solutions for sustainable food production.",
+    image: "https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//background_liv-lif.jpg",
+    key: "Agri Food",
+    subCategories: ["Farm Technology", "Food Processing", "Smart Agriculture", "Sustainable Solutions"]
+  },
+  {
+    title: "Fashion",
+    icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//fashion.png', // Replace with your custom image URL
+    description: "Innovative fashion technology and textile solutions for the modern industry.",
+    image: "https://images.unsplash.com/photo-1618090584126-129cd1b2d239",
+    key: "Fashion",
+    subCategories: ["Textile Tech", "Smart Fabrics", "Manufacturing", "Design Solutions"]
+  },
+  {
     title: "Defense",
     icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//defense.png', // Replace with your custom image URL
     description: "Cutting-edge defense systems and security solutions for modern defense requirements.",
     image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e",
     key: "Defense",
     subCategories: ["Security Systems", "Defense Equipment", "Tactical Solutions", "Protection Gear"]
+  },
+  {
+    title: "Electronics",
+    icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//electronics.png', // Replace with your custom image URL
+    description: "Cutting-edge electronic solutions and components for various industrial applications.",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    key: "Electronics",
+    subCategories: ["Circuit Systems", "Electronic Components", "Smart Devices", "Control Systems"]
   },
   {
     title: "Telecom",
@@ -373,54 +397,54 @@ const verticals = [
     key: "Future Energy",
     subCategories: ["Renewable Energy", "Smart Grids", "Energy Storage", "Clean Tech"]
   },
-  {
-    title: "Agri Food",
-    icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//food%20and%20agri.png', // Replace with your custom image URL
-    description: "Advanced agricultural and food processing solutions for sustainable food production.",
-    image: "https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//background_liv-lif.jpg",
-    key: "Agri Food",
-    subCategories: ["Farm Technology", "Food Processing", "Smart Agriculture", "Sustainable Solutions"]
-  },
-  {
-    title: "Mobility",
-    icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//mobility.png', // Replace with your custom image URL
-    description: "Next-generation mobility solutions for efficient and sustainable transportation.",
-    image: "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0",
-    key: "Mobility",
-    subCategories: ["Electric Vehicles", "Smart Transport", "Urban Mobility", "Charging Infrastructure"]
-  },
-  {
-    title: "Electronics",
-    icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//electronics.png', // Replace with your custom image URL
-    description: "Cutting-edge electronic solutions and components for various industrial applications.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
-    key: "Electronics",
-    subCategories: ["Circuit Systems", "Electronic Components", "Smart Devices", "Control Systems"]
-  },
-  {
-    title: "Aerospace",
-    icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//aerospace.png', // Replace with your custom image URL
-    description: "Advanced aerospace technologies and solutions for aviation and space exploration.",
-    image: "https://images.unsplash.com/photo-1517976487492-5750f3195933",
-    key: "Aerospace",
-    subCategories: ["Aircraft Systems", "Space Technology", "Aviation Equipment", "Aerospace Components"]
-  },
-  {
-    title: "Sustainability",
-    icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//health.png', // Replace with your custom image URL
-    description: "Eco-friendly solutions and technologies for a sustainable future.",
-    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e",
-    key: "Sustainability",
-    subCategories: ["Green Technology", "Waste Management", "Eco Solutions", "Sustainable Materials"]
-  },
-  {
-    title: "Fashion",
-    icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//fashion.png', // Replace with your custom image URL
-    description: "Innovative fashion technology and textile solutions for the modern industry.",
-    image: "https://images.unsplash.com/photo-1618090584126-129cd1b2d239",
-    key: "Fashion",
-    subCategories: ["Textile Tech", "Smart Fabrics", "Manufacturing", "Design Solutions"]
-  },
+  // {
+  //   title: "Agri Food",
+  //   icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//food%20and%20agri.png', // Replace with your custom image URL
+  //   description: "Advanced agricultural and food processing solutions for sustainable food production.",
+  //   image: "https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//background_liv-lif.jpg",
+  //   key: "Agri Food",
+  //   subCategories: ["Farm Technology", "Food Processing", "Smart Agriculture", "Sustainable Solutions"]
+  // },
+  // {
+  //   title: "Mobility",
+  //   icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//mobility.png', // Replace with your custom image URL
+  //   description: "Next-generation mobility solutions for efficient and sustainable transportation.",
+  //   image: "https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0",
+  //   key: "Mobility",
+  //   subCategories: ["Electric Vehicles", "Smart Transport", "Urban Mobility", "Charging Infrastructure"]
+  // },
+  // {
+  //   title: "Electronics",
+  //   icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//electronics.png', // Replace with your custom image URL
+  //   description: "Cutting-edge electronic solutions and components for various industrial applications.",
+  //   image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+  //   key: "Electronics",
+  //   subCategories: ["Circuit Systems", "Electronic Components", "Smart Devices", "Control Systems"]
+  // },
+  // {
+  //   title: "Aerospace",
+  //   icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//aerospace.png', // Replace with your custom image URL
+  //   description: "Advanced aerospace technologies and solutions for aviation and space exploration.",
+  //   image: "https://images.unsplash.com/photo-1517976487492-5750f3195933",
+  //   key: "Aerospace",
+  //   subCategories: ["Aircraft Systems", "Space Technology", "Aviation Equipment", "Aerospace Components"]
+  // },
+  // {
+  //   title: "Sustainability",
+  //   icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//health.png', // Replace with your custom image URL
+  //   description: "Eco-friendly solutions and technologies for a sustainable future.",
+  //   image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e",
+  //   key: "Sustainability",
+  //   subCategories: ["Green Technology", "Waste Management", "Eco Solutions", "Sustainable Materials"]
+  // },
+  // {
+  //   title: "Fashion",
+  //   icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//fashion.png', // Replace with your custom image URL
+  //   description: "Innovative fashion technology and textile solutions for the modern industry.",
+  //   image: "https://images.unsplash.com/photo-1618090584126-129cd1b2d239",
+  //   key: "Fashion",
+  //   subCategories: ["Textile Tech", "Smart Fabrics", "Manufacturing", "Design Solutions"]
+  // },
   {
     title: "Multitech",
     icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//multitech.png', // Replace with your custom image URL
