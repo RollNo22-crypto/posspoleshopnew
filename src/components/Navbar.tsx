@@ -52,7 +52,11 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <span className="text-cyan-600 text-xl font-bold">Posspole</span>
+            <img
+            src="https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//image.png" 
+              alt="Posspole Logo"
+              className="h-8 w-auto" /* Adjust size as needed */
+            />
             </Link>
           </div>
 
