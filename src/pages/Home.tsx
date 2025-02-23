@@ -164,40 +164,39 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative w-full h-[90vh] bg-gray-900 text-white">
-  {/* Background Image */}
-  <div className="absolute inset-0 overflow-hidden">
-    <img
-      src="https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//rsz_1webbanner%20(1).jpg"
-      alt="Industrial Background"
-      className="w-full h-full object-cover"
-    />
-  </div>
+        <section className="relative w-full h-[90vh] bg-gray-900 text-white">
+          {/* Background Image */}
+          <div className="absolute inset-0 overflow-hidden">
+            <img
+              src="https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//rsz_1webbanner%20(1).jpg"
+              alt="Industrial Background"
+              className="w-full h-full object-cover"
+            />
+          </div>
 
-  {/* Content Wrapper (Moved Down) */}
-  <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 sm:pt-48 lg:pt-56">
-    {/* <h1 className="text-4xl md:text-5xl font-bold mb-6">
-      Your Gateway to Industrial Excellence
-    </h1> */}
-    {/* <p className="text-xl md:text-2xl mb-8 max-w-2xl">
-      Discover comprehensive solutions across multiple industries with Posspole's extensive range of products and services.
-    </p> */}
-    {/* <Link
-      to="/verticals"
-      className="inline-block bg-cyan-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-cyan-700 transition-colors"
-    >
-      Explore All Verticals
-    </Link> */}
-  </div>
-  <div className="absolute bottom-0 left-0 w-full">
-    <Link
-      to="/verticals"
-      className="block w-full bg-cyan-600 text-white py-4 text-center text-lg font-semibold hover:bg-cyan-700 transition-colors"
-    >
-      Explore All Verticals
-    </Link>
-  </div>
-</section>
+          {/* Centered Fixed-Width Button */}
+          {/* <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-40 sm:pt-48 lg:pt-56 flex justify-center">
+            <Link
+              to="/verticals"
+              className="bg-cyan-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-cyan-700 transition-colors shadow-lg"
+            >
+              Explore All Verticals
+            </Link>
+          </div> */}
+
+          {/* Full-Width Bottom Button */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+            <button
+              onClick={() => window.location.href = "/verticals"}
+              className="bg-cyan-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-cyan-700 transition-colors shadow-lg"
+            >
+              Explore All Verticals
+            </button>
+          </div>
+
+
+        </section>
+
 
 
 
