@@ -485,24 +485,59 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative w-full h-[90vh] bg-gray-900 text-white">
         {/* Background Image */}
-        <div className="absolute inset-0 overflow-hidden">
+        {/* <div className="absolute inset-0 overflow-hidden">
           <img
             src="https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//rsz_1webbanner%20(1).jpg"
             alt="Industrial Background"
             className="w-full h-full object-cover"
           />
-        </div>
+        </div> */}
 
         {/* Full-Width Bottom Button */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
           <button
             onClick={() => window.location.href = "/verticals"}
             className="bg-cyan-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-cyan-700 transition-colors shadow-lg"
           >
             Explore All Verticals
           </button>
-        </div>
-      </section>
+        </div> */}
+  {/* Background Image with Responsive Variants */}
+  <div className="absolute inset-0 overflow-hidden">
+    <picture>
+      {/* Mobile Image (up to 768px) */}
+      <source 
+        media="(max-width: 768px)" 
+        srcSet="https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//3-4_webbanner-03.jpg"
+      />
+
+      {/* Tablet Image (between 768px - 1024px) */}
+      <source 
+        media="(max-width: 1024px)" 
+        srcSet="https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images/desktop_webbanner.jpg"
+      />
+
+      {/* Desktop Image (default for larger screens) */}
+      <img
+        src="https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images/desktop_webbanner.jpg"
+        alt="Industrial Background"
+        className="w-full h-full sm:object-cover object-fill"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+
+  {/* Full-Width Bottom Button */}
+  <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+    <button
+      onClick={() => window.location.href = "/verticals"}
+      className="bg-cyan-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-cyan-700 transition-colors shadow-lg"
+    >
+      Explore All Verticals
+    </button>
+  </div>
+
+</section>
 
       {/* Verticals Section */}
       <section className="py-16 bg-gray-50">
