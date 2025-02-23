@@ -377,7 +377,7 @@ const verticals = [
     title: "Agri Food",
     icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//food%20and%20agri.png', // Replace with your custom image URL
     description: "Advanced agricultural and food processing solutions for sustainable food production.",
-    image: "https://images.unsplash.com/photo-1591261730799-ee4e6c2d16d7",
+    image: "https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//background_liv-lif.jpg",
     key: "Agri Food",
     subCategories: ["Farm Technology", "Food Processing", "Smart Agriculture", "Sustainable Solutions"]
   },
