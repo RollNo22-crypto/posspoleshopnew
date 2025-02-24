@@ -554,7 +554,7 @@ export default function Home() {
   {/* Full-Width Bottom Button */}
   <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
     <button
-      onClick={() => window.location.href = "/verticals"}
+      onClick={() => window.location.href = "/verticals#/verticals"}
       className="bg-cyan-600 text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-cyan-700 transition-colors shadow-lg"
     >
       Explore All Verticals
