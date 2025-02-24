@@ -591,7 +591,7 @@ export default function Home() {
                               <img
                                 src={iconUrl}
                                 alt={`${vertical.title} Icon`}
-                                className="w-auto h-6"
+                                className="w-auto h-10"
                               />
                             {/* </div> */}
                             {/* <h3 className="text-2xl font-bold text-white">
