@@ -238,7 +238,7 @@ const verticalInfo = {
   "Fashion": {
     icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//fashion.png', // Replace with your custom image URL
     description: 'Innovative fashion technology and textile solutions for the modern industry.',
-    image: 'https://images.unsplash.com/photo-1618090584126-129cd1b2d239'
+    image: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//fashionbanner2.jpg'
   },
   "Multitech": {
     icon: 'https://fhdcygdjolbkjpsqvflk.supabase.co/storage/v1/object/public/Images//multitech.png', // Replace with your custom image URL
