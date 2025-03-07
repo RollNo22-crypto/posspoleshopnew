@@ -696,7 +696,7 @@ export default function Footer() {
                   type="submit"
                   className="bg-cyan-600 px-4 py-2 rounded-lg hover:bg-cyan-700 transition-colors text-white"
                 >
-                  Subscribe
+                  Submit
                 </button>
               </form>
             </div>
